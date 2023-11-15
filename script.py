@@ -1,4 +1,5 @@
 import redis
+import ssl
 import os
 from dotenv import load_dotenv
 
@@ -12,7 +13,8 @@ r = redis.Redis(
   host=host_client,
   port=33202,
   password=redis_password,
-  ssl=True
+  ssl=True,
+  ssl_cert_reqs=ssl.CERT_NONE
 )
 
 r.set('foo', 'bar')
