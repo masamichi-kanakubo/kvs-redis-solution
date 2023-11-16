@@ -18,12 +18,18 @@ redis_client = redis.Redis(
   ssl_cert_reqs=ssl.CERT_NONE
 )
 
+start_time = time.time()
+
 redis_client.set('count', 0)
 while True:
     count = int(redis_client.get('count'))
 
     count += 1
-    print(count)
     redis_client.set('count', count)
 
-    time.sleep(10)
+    elased_time = time.time() - start_time
+    if elased_time >= 5:
+        count = int(redis_client.get('count'))
+        print('Current Count: ', count)
+        start_time = time.time()
+    time.sleep(1)
