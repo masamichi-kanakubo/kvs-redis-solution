@@ -31,4 +31,6 @@ or
 ```
 pip install redis==5.0.1
 pip install python-dotenv==1.0.0
+pip install slack-sdk==3.24.o
 ```
+
