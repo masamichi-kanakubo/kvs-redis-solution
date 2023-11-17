@@ -1,10 +1,10 @@
-# kvs-redis-solution
+# Reproduction of Craft Counter with redis and python/Notification to slack constantly
 
-## kvs counter test with redis and python/ notification to slack count
+## Overview
 
 [![My Skills](https://skillicons.dev/icons?i=python,redis)](https://skillicons.dev)
 
-## quick start
+## Quick Start on Your Device
 
 ### environment
 - macOS
