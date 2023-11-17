@@ -4,6 +4,8 @@
 
 [![My Skills](https://skillicons.dev/icons?i=python,redis)](https://skillicons.dev)
 
+### reproduction counter DB by key-value-store and get value constantly to notification to slack
+
 ## Quick Start on Your Device
 
 ### environment
